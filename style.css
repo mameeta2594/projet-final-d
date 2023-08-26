@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: 0;
+}
+
+html {
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+body {
+    margin: 0;
+}
+.background{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.background::before{
+    content: "";
+    background-image: url(https://th.bing.com/th/id/R.8b576525bf6e74e710829e90fb7c4be6?rik=0fEai7lY1IJkQw&riu=http%3a%2f%2fwallsdesk.com%2fwp-content%2fuploads%2f2018%2f04%2fBaobab-Images.jpg&ehk=QPNTW1sONNXMMOFFvXdLeTncYNYKegQz53eauLGqgDY%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+section {
+    margin-top: 50px;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 5%;
+    border-radius: 12px;
+}
+
+header .logo a {
+    font-size: 20px;
+    color: aqua
+}
+
+header .logo a span {
+    color: black;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: black;
+    font-size: 15px;
+}
+
+/*css*/
+#home {
+    height: 100vh;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: url(https://th.bing.com/th/id/R.801aa8979c1a8cc93328164aa994631e?rik=VNmJAhWrpbLZBw&pid=ImgRaw&r=0);
+    background-size: cover;
+    object-fit: cover;
+
+    animation: slide 30s infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slide {
+    0% {
+        background: url(https://th.bing.com/th/id/R.7c143fc864d52c4d1e1252fc56a66ba0?rik=8SaH7sHeHyn9pQ&pid=ImgRaw&r=0);
+    }
+
+    25% {
+        background: url(https://th.bing.com/th/id/R.c5579453524645af31979e404991676d?rik=WmakCtlIf123cg&pid=ImgRaw&r=0);
+    }
+
+    50% {
+        background: url(https://th.bing.com/th/id/R.da906356ad0da51520c660814c6a0efe?rik=XI9SBxkLrtTn9w&pid=ImgRaw&r=0);
+    }
+
+    75% {
+        background: url(https://th.bing.com/th/id/R.13eb59e8d0f39af4ce64b2bbd9b8a281?rik=eeRz%2b7kzHYsIRQ&pid=ImgRaw&r=0&sres=1&sresct=1);
+    }
+
+    100% {
+        background: url(https://th.bing.com/th/id/R.801aa8979c1a8cc93328164aa994631e?rik=VNmJAhWrpbLZBw&pid=ImgRaw&r=0);
+    }
+
+
+
+
+
+}
+
+
+#home {
+    font-size: 18px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: white 0.02px;
+    color: black;
+    text-transform: uppercase;                    
+
+}
+
+#home p {
+    color:black;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 13px
+    ;
+}
+#home h1{
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+
+
+/*a propos*/
+#a-propos {
+    margin-top: 100px;
+    padding: 0 10%;
+    width: 100%;
+}
+
+.titre {
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.titre::after {
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: aqua;
+    width: 5px;
+}
+
+.right p {
+    color: black;
+font-weight:  14px;
+    margin-bottom: 36px;
+}
+.right h1{
+    font-size: 13px;
+}
+
+.right a {
+    border: 1px solid aqua;
+    color: aqua;
+    font-size: 14px;
+    padding: 8px 25px;
+    font-weight: bold;
+}
+
+/*lieux*/
+#lieux-populaires {
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+#lieux-populaires .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+#lieux-populaires .content .box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+    border-radius: 12px;
+}
+
+#lieux-populaires .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+    
+}
+
+.box .content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.box .content p {
+    padding: 2px;
+    font-size: 10px;
+}
+
+.box .content p::nth-child(3) {
+    margin-bottom: 25px;
+}
+
+.box .content a {
+    margin-top: 50px;
+    padding: 8px 50px;
+    border: 1px solid aqua;
+    color: aqua;
+    font-weight: bold;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px aqua;
+}
+
+.box:hover .content {
+    transform: translateX(0);
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background:url(https://2.bp.blogspot.com/-cdTGYiE5Sno/T5p0dgDkf6I/AAAAAAAABC8/RYUw_H5kpDQ/s640/231-Coucher+de+soleil.jpg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.content h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-info .boxx{
+    position: relative;
+    padding:0 20px 0 ;
+    margin-left: 20px;
+    display: flex;
+}
+.contact-info .boxx.icone{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-project-caption-button {
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+@media (max-width:750px) {
+    header .menu {
+        display: none;
+    }
+
+    .btn-activites {
+        display: none;
+    }
+
+    /*home responsive*/
+    #home h2 {
+        font-size: 28px;
+        -webkit-text-stroke: 0;
+        color: white;
+    }
+
+    #home p {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    /*responsive a propos*/
+    .responsive-menu {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+    }
+
+    .responsive-menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: aqua;
+        width: 28px;
+        box-shadow: 0 10px 0 aqua;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .responsive-menu.active::after {
+        box-shadow: 0 0 0 aqua;
+        transform: rotate(45deg);
+
+    }
+
+    .responsive-menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: aqua;
+        width: 28px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .responsive-menu.active::before {
+        transform: rotate(-45deg);
+    }
+
+    header .menu .responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        flex-direction: column;
+        background-color: black;
+        align-items: unset;
+        animation: animate-menu 1s forwards;
+
+    }
+
+    header .menu.responsive li {
+        margin: 20px;
+        width: 100px;
+        padding-left: 20px;
+
+    }
+
+    @keyframes animate-menu {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(100s);
+        }
+    }
+
+}
